@@ -23,7 +23,6 @@ public class CountString {
                     foundSpace = false;
                 }
 
-
             } else
                 foundSpace = true;
         }
@@ -31,23 +30,18 @@ public class CountString {
 
     }
 
-    public String changeDotsInitial(String str) {
-        String result = "";
-        boolean foundSpace = true;
-        char[] input = str.toLowerCase().toCharArray();
-        for (int i = 0; i < str.length(); i++) {
-            if (Character.isWhitespace(input[i]) || input[i] == '.'|| input[i]==' ') {
-                input[0] = Character.toUpperCase(input[0]);
-                input[i] = Character.toUpperCase(input[i]);
-                foundSpace = false;
-
-            } else
-                foundSpace = true;
-        }
-
-        result += String.valueOf(input);
-        return result;
-    }
+//    public String changeDotsInitial(String str) {
+//        String result = "";
+//        String[] input = str.split(".");
+//        for (int i = 0; i < str.length(); i++) {
+//            input[i].trim();
+//            input[i].toLowerCase();
+//            result += input[i].substring(0, 1).toUpperCase();
+//            result += input[i].substring(1) + "";
+//
+//        }
+//        return result;
+//    }
 
 
 }

@@ -10,7 +10,7 @@ public class App {
         CountString count = new CountString();
         System.out.println("Count the number of capitalized words: " + count.countStrings(str));
         System.out.println("String had Change: " + count.capitalizeInitials(str));
-        System.out.println(" --"+ count.changeDotsInitial(str));
+        System.out.println(" Change Dots Initial: "+ count.changeDotsInitial(str));
 
     }
 }
