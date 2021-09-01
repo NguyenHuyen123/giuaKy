@@ -24,7 +24,7 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket: " + "tenChuyen='" + tenChuyen + '\'' + ", ngayBay=" + ngayBay + ", giaVe=" + giaVe;
+        return "Ticket: " + "tenChuyen:'" + tenChuyen  + ", ngayBay: " + ngayBay + ", giaVe: " + giaVe;
     }
 
 
