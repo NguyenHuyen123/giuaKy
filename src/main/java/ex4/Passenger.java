@@ -17,9 +17,9 @@ public class Passenger {
         this.danhSachVe = danhSachVe;
     }
 
-//    public Passenger() {
-//
-//    }
+    public Passenger() {
+
+    }
 
     @Override
     public String toString() {
