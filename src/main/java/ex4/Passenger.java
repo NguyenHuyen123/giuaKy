@@ -10,6 +10,7 @@ public class Passenger {
     private int tuoi;
     private Ticket[] danhSachVe;
 
+
     public Passenger(String hoten, boolean gioiTinh, int tuoi, Ticket[] danhSachVe) {
         this.hoten = hoten;
         this.gioiTinh = gioiTinh;
@@ -23,27 +24,28 @@ public class Passenger {
 
     @Override
     public String toString() {
-        String s="";
-        for (Ticket i: danhSachVe) {
-            s+= i.toString()+"\n";
+        String s = "";
+        for (Ticket i : danhSachVe) {
+            s += i.toString() + "\n";
         }
         return "Passenger: " + "hoten: '" + hoten + '\'' +
                 ", gioiTinh: " + gioiTinh +
                 ", tuoi: " + tuoi +
-                ", danhSachVe:" +"\n"+  s ;
+                ", danhSachVe:" + "\n" + s;
 
     }
 
     public int tinhTongTien() {
-        int result=0;
-        for (Ticket i:this.danhSachVe) {
-            result+= i.getGiaVe();
+        int result = 0;
+        for (Ticket i : this.danhSachVe) {
+            result += i.getGiaVe();
         }
         return result;
     }
-    public  void sortDESC() {
+
+    public void sortDESCdanhsach() {
         Ticket temp = this.danhSachVe[0];
-        for ( int i= 0 ; i < this.danhSachVe.length - 1; i++) {
+        for (int i = 0; i < this.danhSachVe.length - 1; i++) {
             for (int j = i + 1; j < this.danhSachVe.length; j++) {
                 if (this.danhSachVe[i].getGiaVe() < this.danhSachVe[j].getGiaVe()) {
                     temp = this.danhSachVe[j];
@@ -52,6 +54,20 @@ public class Passenger {
                 }
             }
         }
+    }
+
+    public static Passenger[] sortDESCPassenger(Passenger[] arrPassenger) {
+        Passenger temp = arrPassenger[0];
+        for (int i = 0; i < arrPassenger.length - 1; i++) {
+            for (int j = i + 1; j < arrPassenger.length; j++) {
+                if (arrPassenger[i].tinhTongTien() < arrPassenger[j].tinhTongTien()) {
+                    temp = arrPassenger[j];
+                    arrPassenger[j] = arrPassenger[i];
+                    arrPassenger[i] = temp;
+                }
+            }
+        }
+        return arrPassenger;
     }
 
 }
