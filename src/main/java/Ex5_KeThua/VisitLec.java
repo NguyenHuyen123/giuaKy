@@ -1,7 +1,7 @@
 package Ex5_KeThua;
 
 public class VisitLec extends Lecturer {
-    private static final int price =200000;
+    private static final int price = 200000;
     private String company;
 
     public VisitLec(String nameLec, String email, String address, String phone, int hourOfMonth, String company) {
@@ -20,9 +20,14 @@ public class VisitLec extends Lecturer {
     }
 
     @Override
+    public boolean isTypeLecs() {
+        return false;
+    }
+
+    @Override
     public String toString() {
         return "Lecturer: " + getNameLec() + ", email='" + getEmail() + ", address='" + getAddress()
                 + ", phone=" + getPhone() + ", agreeSalary=" + getHourOfMonth() + ", company='"
-                + getCompany() + ", salary: " + salary()+ " VNĐ";
+                + getCompany() + ", salary: " + salary() + " VNĐ";
     }
 }

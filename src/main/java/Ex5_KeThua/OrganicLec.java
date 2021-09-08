@@ -32,9 +32,14 @@ public class OrganicLec extends Lecturer {
     }
 
     @Override
+    public boolean isTypeLecs() {
+        return true;
+    }
+
+    @Override
     public String toString() {
         return "Lecturer:" + getNameLec() + ", email='" + getEmail() + ", address='" + getAddress()
                 + ", phone=" + getPhone() + ", agreeSalary=" + getHourOfMonth() + ", price1Month="
-                + getPrice1Month() + ", salary1Hour=" + getPrice1Month() + ", salary: " + salary()+ " VNĐ";
+                + getPrice1Month() + ", salary1Hour=" + getPrice1Month() + ", salary: " + salary() + " VNĐ";
     }
 }

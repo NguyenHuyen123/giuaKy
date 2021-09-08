@@ -26,13 +26,22 @@ public class Center {
         for (Lecturer lt : ar1) {
             System.out.println(lt.toString());
         }
-    // in ra Tổng lương cao nhất của giáo viên
+        // in ra Tổng lương cao nhất của giáo viên
         Lecturer max = ar1.get(0);
         for (Lecturer lt : ar1) {
             if (max.salary() < lt.salary())
                 max = lt;
+
         }
+
         System.out.println("**Giảng viên có lương cao nhất ");
-        System.out.println(max+"\n"+max.isTypeLec()); // true: giáo viên cơ hữu, false: giáo viên thỉnh giảng.
+        System.out.println(max); // true: giáo viên cơ hữu, false: giáo viên thỉnh giảng.
+
+        if (max.isTypeLecs()) {
+            System.out.println("Là giáo viên cơ hữu");
+
+        } else
+            System.out.println("Là giáo viên thỉnh giảng");
+
     }
 }
