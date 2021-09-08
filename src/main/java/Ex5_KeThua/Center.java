@@ -32,7 +32,7 @@ public class Center {
             if (max.salary() < lt.salary())
                 max = lt;
         }
-        System.out.println("Giảng viên có tổng lương cao nhất ");
+        System.out.println("Giảng viên có lương cao nhất ");
         System.out.println(max);
     }
 }
