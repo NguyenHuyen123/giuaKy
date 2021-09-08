@@ -23,6 +23,6 @@ public class VisitLec extends Lecturer {
     public String toString() {
         return "Lecturer: " + getNameLec() + ", email='" + getEmail() + ", address='" + getAddress()
                 + ", phone=" + getPhone() + ", agreeSalary=" + getHourOfMonth() + ", company='"
-                + getCompany() + ", salary: " + salary()+" VNĐ";
+                + getCompany() + ", salary: " + salary()+ " VNĐ";
     }
 }
