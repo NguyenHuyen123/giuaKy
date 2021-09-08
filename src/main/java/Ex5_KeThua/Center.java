@@ -35,8 +35,9 @@ public class Center {
         }
 
         System.out.println("**Giảng viên có lương cao nhất ");
-        System.out.println(max); // true: giáo viên cơ hữu, false: giáo viên thỉnh giảng.
+        System.out.println(max);
 
+        // Thuộc giáo viên nào
         if (max.isTypeLecs()) {
             System.out.println("Là giáo viên cơ hữu");
 
