@@ -39,6 +39,12 @@ public abstract class Lecturer {
 
     public abstract int salary();
 
+    public boolean  isTypeLec() {
+        if (getHourOfMonth() > 40) {
+            return true; // là giáo viên cơ hữu
+        } else
+            return false; // là giáo viên thỉnh giảng
+    }
 
     @Override
     public String toString() {

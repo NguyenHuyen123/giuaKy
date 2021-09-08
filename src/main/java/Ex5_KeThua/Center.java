@@ -33,6 +33,6 @@ public class Center {
                 max = lt;
         }
         System.out.println("**Giảng viên có lương cao nhất ");
-        System.out.println(max);
+        System.out.println(max+"\n"+max.isTypeLec()); // true: giáo viên cơ hữu, false: giáo viên thỉnh giảng.
     }
 }
