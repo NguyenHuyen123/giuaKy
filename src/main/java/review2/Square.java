@@ -20,6 +20,6 @@ public class Square implements IShape{
 
     @Override
     public String toString() {
-        return "Circle: " + ", cR=" + this.cR + " S= " + area() + " mét vuông" + "\n";
+        return "Square: " + ", cR=" + this.cR + " S= " + area() + " mét vuông" + "\n";
     }
 }

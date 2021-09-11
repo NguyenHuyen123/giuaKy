@@ -28,6 +28,6 @@ public class Rectangular implements IShape {
 
     @Override
     public String toString() {
-        return "Square: " + "cD=" + this.cD + ", cR=" + this.cR + " S= "+area()+ " mét vuông"+"\n";
+        return "Rectangular: " + "cD=" + this.cD + ", cR=" + this.cR + " S= "+area()+ " mét vuông"+"\n";
     }
 }
