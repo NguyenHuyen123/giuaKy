@@ -1,6 +1,6 @@
 package review2;
 
-public class Square implements  Rectangular{
+public class Square implements  IShape{
     private double topleft;
     private double cD;
     private double cR;

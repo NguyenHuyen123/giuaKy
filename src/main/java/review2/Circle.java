@@ -1,6 +1,6 @@
 package review2;
 
-public class Circle implements Rectangular {
+public class Circle implements IShape {
     private double topleft;
     private double cR;
 

@@ -1,6 +1,6 @@
 package review2;
 
-public class Triangle implements Rectangular {
+public class Triangle implements IShape {
     private double a;
     private double b;
     private double c;
