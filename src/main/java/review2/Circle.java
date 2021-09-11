@@ -2,7 +2,7 @@ package review2;
 
 public class Circle implements IShape {
     private double topleft;
-    private double cR;
+    private double cR ;
 
     public Circle(double topleft, double cR) {
         this.topleft = topleft;
@@ -10,7 +10,7 @@ public class Circle implements IShape {
     }
 
     public double getcR() {
-        return cR;
+        return cR ;
     }
 
     @Override

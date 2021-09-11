@@ -6,7 +6,7 @@ public class Rectangular implements IShape {
 
     public Rectangular(double heartO, double radius) {
         this.heartO = heartO;
-        this.radius = radius;
+        this.radius = radius ;
     }
 
     public double getHeartO() {

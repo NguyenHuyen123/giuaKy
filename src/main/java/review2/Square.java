@@ -21,7 +21,7 @@ public class Square implements  IShape{
 
     @Override
     public double area() {
-        return getcR()*getcD();
+        return getcR()*getcD() ;
     }
 
     @Override

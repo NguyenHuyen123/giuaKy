@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RealEstate {
     public static void main(String[] args) {
-        double price=500000.0 ;
+        double price=500000.0;
         Square s = new Square(2.0, 7.0, 6.2);
         Circle c = new Circle(3.0, 7.3);
         Rectangular g = new Rectangular(0.0, 6.0);
