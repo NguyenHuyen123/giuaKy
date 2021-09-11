@@ -1,25 +1,29 @@
 package review2;
 
 public class Circle implements IShape {
-    private double topleft;
-    private double cR ;
+    private double heartO;
+    private double radius;
 
-    public Circle(double topleft, double cR) {
-        this.topleft = topleft;
-        this.cR = cR;
+    public Circle(double heartO, double radius) {
+        this.heartO = heartO;
+        this.radius = radius;
     }
 
-    public double getcR() {
-        return cR ;
+    public double getHeartO() {
+        return heartO;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 
     @Override
     public double area() {
-        return Math.pow(getcR(), 2);
+        return Math.pow(getRadius(), 2) * 3.14;
     }
 
     @Override
     public String toString() {
-        return "Circle: " + ", cR=" + this.cR + " S= " + area() + " mét vuông" + "\n";
+        return "Circle: " + "heartO=" + this.heartO + ", radius=" + this.radius + " S= " + area() + " mét vuông" + "\n";
     }
 }

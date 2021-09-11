@@ -1,5 +1,7 @@
 package review2;
 
+import review2.IShape;
+
 public class Triangle implements IShape {
     private double a;
     private double b;

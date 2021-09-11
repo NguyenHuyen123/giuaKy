@@ -1,29 +1,33 @@
 package review2;
 
+import review2.IShape;
+
 public class Rectangular implements IShape {
-    private double heartO;
-    private double radius;
+    private double topleft;
+    private double cD;
+    private double cR;
 
-    public Rectangular(double heartO, double radius) {
-        this.heartO = heartO;
-        this.radius = radius ;
+    public Rectangular(double topleft, double cD, double cR) {
+        this.topleft = topleft;
+        this.cD = cD;
+        this.cR = cR;
     }
 
-    public double getHeartO() {
-        return heartO;
+    public double getcD() {
+        return cD;
     }
 
-    public double getRadius() {
-        return radius;
+    public double getcR() {
+        return cR;
     }
 
     @Override
     public double area() {
-        return Math.pow(getRadius(), 2) * 3.14;
+        return getcR()*getcD() ;
     }
 
     @Override
     public String toString() {
-        return "Geometry: " + "heartO=" + this.heartO + ", radius=" + this.radius + " S= " + area() + " mét vuông" + "\n";
+        return "Square: " + "cD=" + this.cD + ", cR=" + this.cR + " S= "+area()+ " mét vuông"+"\n";
     }
 }
