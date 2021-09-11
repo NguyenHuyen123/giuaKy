@@ -1,7 +1,7 @@
 package review2;
 
-public class Circle implements Rectangular{
-    private  double topleft;
+public class Circle implements Rectangular {
+    private double topleft;
     private double cR;
 
     public Circle(double topleft, double cR) {
@@ -15,11 +15,11 @@ public class Circle implements Rectangular{
 
     @Override
     public double area() {
-        return Math.pow(getcR(),2);
+        return Math.pow(getcR(), 2);
     }
 
     @Override
     public String toString() {
-        return "Circle: " + ", cR=" +this.cR +" S= "+area()+ " mét vuông"+"\n";
+        return "Circle: " + ", cR=" + this.cR + " S= " + area() + " mét vuông" + "\n";
     }
 }

@@ -42,13 +42,13 @@ public class Triangle implements Rectangular {
     @Override
     public double area() {
         double dt;
-       double p = chuVi()/2;
-        dt =  Math.sqrt(p * (p - getA()) * (p - getB()) * (p - getC()));
+        double p = chuVi() / 2;
+        dt = Math.sqrt(p * (p - getA()) * (p - getB()) * (p - getC()));
         return dt;
     }
 
     @Override
     public String toString() {
-        return "Triangle: " + "a=" + this.a + ", b=" + this.b + ", c=" + this.c+ " S= "+area()+ " mét vuông"+"\n";
+        return "Triangle: " + "a=" + this.a + ", b=" + this.b + ", c=" + this.c + " S= " + area() + " mét vuông" + "\n";
     }
 }
