@@ -49,6 +49,6 @@ public class Triangle implements Rectangular {
 
     @Override
     public String toString() {
-        return "Triangle " + "a=" + getA() + ", b=" + getB() + ", c=" + getC() + " S= "+area()+ " mét vuông"+"\n";
+        return "Triangle: " + "a=" + this.a + ", b=" + this.b + ", c=" + this.c+ " S= "+area()+ " mét vuông"+"\n";
     }
 }
