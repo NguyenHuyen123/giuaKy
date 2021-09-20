@@ -12,7 +12,8 @@ public class BMI {
         bmi += w / (hei2 * hei2);
         return bmi;
     }
-    private static  boolean runBMI(){
+
+    private static boolean runBMI() {
         try {
             Scanner sc = new Scanner(System.in);
 
@@ -40,20 +41,21 @@ public class BMI {
         } catch (BMIException e) {
 
             System.out.println(e);
-            return  false;
-        } catch (InputMismatchException e){
+            return false;
+        } catch (InputMismatchException e) {
             System.out.println("Nhập số nguyên");
 
-            return  false;
+            return false;
 
         }
     }
+
     public static void main(String[] args) {
         while (true) {
             boolean isCheck = runBMI();
-            if(isCheck){
+            if (isCheck) {
                 break;
-            }else{
+            } else {
                 continue;
             }
         }
