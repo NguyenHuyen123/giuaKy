@@ -9,13 +9,11 @@ public class RegexEmail {
         String input = "abc@gmail.com, abc123@gmail.com, abc_123@gmail.com.com, abc_1_1@gmail.com";
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(input);
-        //System.out.println("Ngày tháng trong chuỗi : " + input);
-
         boolean matchFound = m.find();
         while (matchFound) {
-            String date= input.substring(m.start(), m.end());
+            String date = input.substring(m.start(), m.end());
             System.out.println(date);
-            matchFound=m.find();
+            matchFound = m.find();
         }
     }
 }
