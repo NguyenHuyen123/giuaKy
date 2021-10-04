@@ -68,9 +68,9 @@ public class TraverseDepthFiles {
 
 
     public static void main(String[] args) {
-		File fileOrDir = new File("D:\\");
+        File fileOrDir = new File("D:\\");
         TraverseDepthFiles ex1 = new TraverseDepthFiles();
-    	ex1.traverseDepthFiles(fileOrDir);
+        ex1.traverseDepthFiles(fileOrDir);
 
     }
 }
